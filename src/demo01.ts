@@ -3,11 +3,8 @@ const log:any = console.log;
 let age:number = 19;
 const name:string = 'wxr';
 let arr1:number [] = [1,2,3,4];
-let arr2:Array<string> = ['wxr','hello'];
-let x : [string, number];
-x = [name, age];
-
 const isLogin: boolean = false;
+
 enum SEASON {
     spring = '春',
     summer = '夏',
@@ -16,6 +13,12 @@ enum SEASON {
 }
 var a:any = 'wxr';
 a = 1111;
+const d:Date = new Date();
+
+let arr2:Array<string> = ['wxr','hello'];
+let x : [string, number];
+x = [name, age];
+
 
 function getUserNameByAge(age:number,sex:string = '小姐姐', stature?:string):string {
     let res:string = `找到了${age}`;
@@ -37,6 +40,8 @@ log(name);
 log(isLogin);
 log(SEASON.fall);
 log(a);
+log(d);
+
 const result:string = getUserNameByAge(111);
 const result2:string = getUserNameByAge(111, '啊', 'asd');
 

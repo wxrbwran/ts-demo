@@ -4,9 +4,6 @@ var log = console.log;
 var age = 19;
 var name = 'wxr';
 var arr1 = [1, 2, 3, 4];
-var arr2 = ['wxr', 'hello'];
-var x;
-x = [name, age];
 var isLogin = false;
 var SEASON;
 (function (SEASON) {
@@ -17,6 +14,10 @@ var SEASON;
 })(SEASON || (SEASON = {}));
 var a = 'wxr';
 a = 1111;
+var d = new Date();
+var arr2 = ['wxr', 'hello'];
+var x;
+x = [name, age];
 function getUserNameByAge(age, sex, stature) {
     if (sex === void 0) { sex = '小姐姐'; }
     var res = "\u627E\u5230\u4E86" + age;
@@ -36,6 +37,7 @@ log(name);
 log(isLogin);
 log(SEASON.fall);
 log(a);
+log(d);
 var result = getUserNameByAge(111);
 var result2 = getUserNameByAge(111, '啊', 'asd');
 log(result, result2);
