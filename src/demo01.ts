@@ -14,6 +14,7 @@ enum SEASON {
 var a:any = 'wxr';
 a = 1111;
 const d:Date = new Date();
+const r:RegExp = /'|"/g;
 
 let arr2:Array<string> = ['wxr','hello'];
 let x : [string, number];
@@ -41,6 +42,7 @@ log(isLogin);
 log(SEASON.fall);
 log(a);
 log(d);
+log(r);
 
 const result:string = getUserNameByAge(111);
 const result2:string = getUserNameByAge(111, '啊', 'asd');
