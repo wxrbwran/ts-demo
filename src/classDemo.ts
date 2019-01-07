@@ -1,17 +1,28 @@
 class Animal{
-  name: string;
-  age: number;
-  constructor (name: string, age: number) {
+  public name: string;
+  protected age: number;
+  private sex: string;
+  public constructor (name: string, age: number, sex: string) {
     this.name = name;
-      this.age = age;
+    this.age = age;
+    this.sex = sex;
   }
   walk() {
       console.log(`${this.name} can walk~`);
   }
 }
 
-let dog: Animal = new Animal('旺财', 1);
+let dog: Animal = new Animal('旺财', 1, 'male');
 
 console.log(dog);
+console.log(dog.name);
+// console.log(dog.age);
+// console.log(dog.sex);
 
 dog.walk();
+
+class Man{
+    public readonly sex:string = '男';
+}
+
+var man:Man = new Man();
