@@ -14,6 +14,8 @@ var SEASON;
 })(SEASON || (SEASON = {}));
 var a = 'wxr111';
 a = 1111;
+var num;
+num = 3;
 var d = new Date();
 var r = /'|"/g;
 var arr2 = ['wxr', 'hello'];

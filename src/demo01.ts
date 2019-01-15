@@ -11,8 +11,11 @@ enum SEASON {
     fall = '秋',
     winter = '冬'
 }
-var a:any = 'wxr111';
+var a:string | number = 'wxr111';
 a = 1111;
+
+var num:number | undefined;
+num = 3;
 const d:Date = new Date();
 const r:RegExp = /'|"/g;
 
