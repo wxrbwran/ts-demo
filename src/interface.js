@@ -1,7 +1,8 @@
+"use strict";
 var my = {
     sex: 'male',
     interest: 'read',
-    mai: true
+    mai: true,
 };
 console.log(my);
 var mySearch = function (source, subString) {

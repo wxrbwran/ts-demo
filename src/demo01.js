@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var log = console.log;
 var age = 19;
 var name = 'wxr';
@@ -12,7 +12,7 @@ var SEASON;
     SEASON["fall"] = "\u79CB";
     SEASON["winter"] = "\u51AC";
 })(SEASON || (SEASON = {}));
-var a = 'wxr';
+var a = 'wxr111';
 a = 1111;
 var d = new Date();
 var r = /'|"/g;

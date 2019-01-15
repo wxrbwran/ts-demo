@@ -1,3 +1,4 @@
+"use strict";
 var shuaiGe;
 (function (shuaiGe) {
     var Dehua = /** @class */ (function () {
