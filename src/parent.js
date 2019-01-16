@@ -43,3 +43,4 @@ var Children = /** @class */ (function (_super) {
 var xiaoming = new Children('xiaoming', 10, 'paint', '二年级');
 xiaoming.say();
 xiaoming.move();
+xiaoming.classes;

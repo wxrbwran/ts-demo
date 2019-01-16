@@ -7,7 +7,7 @@ class Animal{
     this.age = age;
     this.sex = sex;
   }
-  walk() {
+  walk():void {
       console.log(`${this.name} can walk~`);
   }
 }
