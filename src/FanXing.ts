@@ -74,6 +74,8 @@ interface IConfig2<T>{
 }
 
 
+
+
 const getData1:IConfig = function<T> (value:T):T {
     return value;
 }

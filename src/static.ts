@@ -5,8 +5,8 @@
 // }
 
 class Person{
-    public name:string;
     static type: string = 'lived';
+    public name:string;
     constructor(name:string) {
         this.name = name;
     }
