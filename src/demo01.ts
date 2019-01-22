@@ -5,6 +5,7 @@ const name:string = 'wxr';
 let arr1:number [] = [1,2,3,4];
 let arr22:Array<string> = ['111'];
 let arr2:Array<string> = ['wxr','hello'];
+console.log(arr2.includes('wxr1'));
 let x : [string, number];
 x = [name, age];
 const isLogin: boolean = false;

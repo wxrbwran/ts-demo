@@ -1,14 +1,19 @@
 // 泛型 可以支持不特定的数据类型
 
 // T 表示泛型，具体什么类型是调用方法的时候决定的；
-function getData<T>(value:T):T{
+function getData<T>(value:T):[T]{
     console.log(value);
-    return value;
+    return [value];
 }
 
 getData<string>('111');
 getData<number>(111);
 // getData<number>('222');
+
+function getDatas<T,S>(value:T, type: S):[T, S]{
+    console.log(value);
+    return [value, type];
+}
 
 // 泛型类
 
@@ -72,10 +77,9 @@ interface IConfig{
 interface IConfig2<T>{
     (value:T):T;
 }
-
-
-
-
+// interface IConfig3<T extends HTMLElement>{
+//     (value:T):void;
+// }
 const getData1:IConfig = function<T> (value:T):T {
     return value;
 }
@@ -91,4 +95,10 @@ myGetData('12213');
 //     return value;
 // }
 
+// function getArray(constructor: {new()}) {
+//     // {new()} 接受一个构造函数
+//     return new constructor();
+// }
+//
+// getArray(Array);
 

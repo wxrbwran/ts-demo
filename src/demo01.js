@@ -6,6 +6,7 @@ var name = 'wxr';
 var arr1 = [1, 2, 3, 4];
 var arr22 = ['111'];
 var arr2 = ['wxr', 'hello'];
+console.log(arr2.includes('wxr1'));
 var x;
 x = [name, age];
 var isLogin = false;

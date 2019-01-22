@@ -3,11 +3,15 @@
 // T 表示泛型，具体什么类型是调用方法的时候决定的；
 function getData(value) {
     console.log(value);
-    return value;
+    return [value];
 }
 getData('111');
 getData(111);
 // getData<number>('222');
+function getDatas(value, type) {
+    console.log(value);
+    return [value, type];
+}
 // 泛型类
 // class MinClass{
 //     public list:number[];
@@ -52,6 +56,9 @@ letter.add('a');
 letter.add('b');
 letter.add('c');
 console.log(letter.min());
+// interface IConfig3<T extends HTMLElement>{
+//     (value:T):void;
+// }
 var getData1 = function (value) {
     return value;
 };
@@ -64,3 +71,9 @@ myGetData('12213');
 // const getData2:IConfig2 = function<T> (value:T):T {
 //     return value;
 // }
+// function getArray(constructor: {new()}) {
+//     // {new()} 接受一个构造函数
+//     return new constructor();
+// }
+//
+// getArray(Array);

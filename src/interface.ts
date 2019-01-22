@@ -59,14 +59,17 @@ var arrNum:userArray = [1,2,3];
 // var arrNum2:userArray = [1,2,3,'5'];
 
 interface userObj{
-    [index: string]: string;
+    [index: string]: any;
+    // length: number;
 }
 const user:userObj = {
     name: 'zs',
-}
+    // length:22,
+};
 
 
 // 类类型接口， 对类的约束，抽象类相似
+// 如果一个抽象类里全都是抽象方法抽象属性，基本可以看作是接口
 
 
 interface IAnimal{
@@ -129,3 +132,7 @@ xiaoming2.eat('meat');
 xiaoming2.speak('hello world');
 xiaoming2.coding('hello, world');
 
+// interface Window{
+//     [attr: string]: any;
+// }
+// Window.miao = 1;

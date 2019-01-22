@@ -86,3 +86,7 @@ var xiaoming2 = new Web('xiaoming');
 xiaoming2.eat('meat');
 xiaoming2.speak('hello world');
 xiaoming2.coding('hello, world');
+// interface Window{
+//     [attr: string]: any;
+// }
+// Window.miao = 1;
