@@ -11,8 +11,15 @@
   "license": "ISC",
   "dependencies": {
     "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.1",
+    "@types/koa-router": "^7.0.38",
     "@types/node": "^10.12.18",
-    "koa": "^2.6.2"
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.7.7"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0"
