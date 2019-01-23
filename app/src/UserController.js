@@ -16,6 +16,9 @@ var routing_controllers_1 = require("routing-controllers");
 var UserController = /** @class */ (function () {
     function UserController() {
     }
+    UserController.prototype.getIndex = function () {
+        return "hello koa";
+    };
     UserController.prototype.getAll = function () {
         return "This action returns all users";
     };
@@ -31,6 +34,12 @@ var UserController = /** @class */ (function () {
     UserController.prototype.remove = function (id) {
         return "Removing user...";
     };
+    __decorate([
+        routing_controllers_1.Get("/"),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], UserController.prototype, "getIndex", null);
     __decorate([
         routing_controllers_1.Get("/users"),
         __metadata("design:type", Function),
@@ -66,7 +75,7 @@ var UserController = /** @class */ (function () {
         __metadata("design:returntype", void 0)
     ], UserController.prototype, "remove", null);
     UserController = __decorate([
-        routing_controllers_1.Controller()
+        routing_controllers_1.Controller('/')
     ], UserController);
     return UserController;
 }());

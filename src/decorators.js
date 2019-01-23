@@ -18,6 +18,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 var Person2 = /** @class */ (function () {
     function Person2(name, age) {
         this.name = name;
@@ -67,6 +70,7 @@ var Student = /** @class */ (function (_super) {
 // 类装饰器
 function Age(v) {
     return function (constructor) {
+        // console.log(v, constructor);
         var Person33 = /** @class */ (function (_super) {
             __extends(Person33, _super);
             function Person33() {
@@ -91,6 +95,35 @@ var Person3 = /** @class */ (function () {
 var p1 = new Person3();
 console.log(p1);
 // 方法装饰器 （路由等）
+// koa中可用
+function log(target, name, descriptor) {
+    console.log('target', target);
+    console.log('name', name);
+    console.log('descriptor', descriptor);
+    var oldValue = descriptor.value;
+    descriptor.value = function () {
+        console.log("Calling \"" + name + "\" with", arguments);
+        return oldValue.apply(null, arguments);
+    };
+    return descriptor;
+}
+var Math1 = /** @class */ (function () {
+    function Math1() {
+    }
+    Math1.prototype.add = function (a, b) {
+        return a + b;
+    };
+    __decorate([
+        log,
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Number, Number]),
+        __metadata("design:returntype", Number)
+    ], Math1.prototype, "add", null);
+    return Math1;
+}());
+var math = new Math1();
+console.log(math.add(2, 4));
+console.log(112);
 // 访问装饰器 （getter/setter）
 // 属性装饰器
 // 参数装饰器
