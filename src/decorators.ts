@@ -61,6 +61,8 @@ let p1 = new Person3();
 console.log(p1);
 
 // 方法装饰器 （路由等）
+// koa中可用
+
 
 // 访问装饰器 （getter/setter）
 
